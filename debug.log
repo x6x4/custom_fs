@@ -1,0 +1,5 @@
+/root/custom_fs/custom_fs_src.c: In function 'custom_fs_fill_sb':
+/root/custom_fs/custom_fs_src.c:18:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   18 |         inode *root = new_inode (sb);
+      |         ^~~~~
+Skipping BTF generation for /root/custom_fs/custom_fs.ko due to unavailability of vmlinux
