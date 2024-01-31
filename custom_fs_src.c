@@ -25,7 +25,7 @@ static int custom_fs_fill_sb (super_block *sb, void *data, int silent) {
 	root->i_sb = sb;
 	root->i_atime = root->i_mtime = root->i_ctime = current_time(root);
 	
-	inode_init_owner (NULL, NULL, root, S_IFDIR);
+	inode_init_owner (sb->s_user_ns, root, NULL, S_IFDIR);
 
 	sb->s_root = d_make_root (root);
 	if (!sb->s_root) {

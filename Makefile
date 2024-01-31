@@ -1,8 +1,6 @@
 
-obj-m += build/custom_fs.o
-build/custom_fs-objs := build/custom_fs_src.o
-build/custom_fs_src.o : src/custom_fs_src.c
-	$(CC) -c $< -o $@
+obj-m += custom_fs.o
+custom_fs-objs := custom_fs_src.o
  
 MAKEFILE_DIR=$(CURDIR)
 
