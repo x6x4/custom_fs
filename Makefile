@@ -1,6 +1,8 @@
+MODULE_NAME = custom_fs
+SOURCE_FILE = custom_fs_src
 
-obj-m += custom_fs.o
-custom_fs-objs := custom_fs_src.o
+obj-m += $(MODULE_NAME).o
+$(MODULE_NAME)-objs := $(SOURCE_FILE).o
  
 MAKEFILE_DIR=$(CURDIR)
 
